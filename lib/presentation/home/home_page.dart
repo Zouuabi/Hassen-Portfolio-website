@@ -109,8 +109,12 @@ class ProfilePhoto extends StatelessWidget {
           height: 300,
           child: Stack(
             children: [
-              SvgPicture.asset('assets/images/profileBackroung.svg'),
-              Image.asset('assets/images/profilePic.png')
+              SvgPicture.asset(
+                'assets/images/profileBackroung.svg',
+              ),
+              Image.asset(
+                'assets/images/profilePic.png',
+              )
             ],
           ),
         ),
