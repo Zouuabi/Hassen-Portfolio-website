@@ -45,6 +45,7 @@ class MainScreen extends StatelessWidget {
                   Scrollable.ensureVisible(
                     key.currentContext!,
                     duration: const Duration(seconds: 1),
+                    controller.
                   );
                 }
               },
