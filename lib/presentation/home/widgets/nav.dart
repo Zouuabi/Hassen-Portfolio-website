@@ -70,22 +70,22 @@ class NavigationBar extends StatelessWidget {
               CustomButton(
                   child: 'Home',
                   onTap: () {
-                    BlocProvider.of<MainCubit>(context).scrollTo(100);
+                    BlocProvider.of<MainCubit>(context).scrollTo(0);
                   }),
               CustomButton(
                   child: 'Projects',
                   onTap: () {
-                    BlocProvider.of<MainCubit>(context).scrollTo(750);
+                    BlocProvider.of<MainCubit>(context).scrollTo(1);
                   }),
               CustomButton(
                   child: 'About me ',
                   onTap: () {
-                    BlocProvider.of<MainCubit>(context).scrollTo(1500);
+                    BlocProvider.of<MainCubit>(context).scrollTo(2);
                   }),
               CustomButton(
                   child: 'Contact',
                   onTap: () {
-                    BlocProvider.of<MainCubit>(context).scrollTo(2250);
+                    BlocProvider.of<MainCubit>(context).scrollTo(3);
                   }),
             ],
           ),

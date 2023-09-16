@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import '../about_me/about_me_screen.dart';
 import '../contact/contact.dart';
@@ -11,12 +12,19 @@ import 'cubit/main_cubit.dart';
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
 
-  static ScrollController controller = ScrollController();
-  static List<GlobalKey> keys = [
-    GlobalKey(),
-    GlobalKey(),
-    GlobalKey(),
-    GlobalKey(),
+  static ItemScrollController itemScrollController = ItemScrollController();
+  static ScrollOffsetController scrollOffsetController =
+      ScrollOffsetController();
+  static ItemPositionsListener itemPositionsListener =
+      ItemPositionsListener.create();
+  static ScrollOffsetListener scrollOffsetListener =
+      ScrollOffsetListener.create();
+
+  static List<Widget> screens = const [
+    Home(),
+    ProjectsScreen(),
+    AboutMeScreen(),
+    ContactMe()
   ];
 
   @override
@@ -41,25 +49,20 @@ class MainScreen extends StatelessWidget {
             child: BlocConsumer<MainCubit, MainState>(
               listener: (context, state) {
                 if (state is MainScrolling) {
-                  final key = keys[state.screen];
-                  Scrollable.ensureVisible(
-                    key.currentContext!,
-                    duration: const Duration(seconds: 1),
-                    controller.
-                  );
+                  itemScrollController.scrollTo(
+                      index: state.screen,
+                      duration: const Duration(seconds: 1),
+                      curve: Curves.easeInOutCubic);
                 }
               },
               builder: (context, state) {
-                return CustomScrollView(
-                  controller: controller,
-                  slivers: [
-                    SliverList.list(children: [
-                      Container(key: keys[0], child: const Home()),
-                      Container(key: keys[1], child: const ProjectsScreen()),
-                      Container(key: keys[2], child: const AboutMeScreen()),
-                      Container(key: keys[3], child: const ContactMe()),
-                    ])
-                  ],
+                return ScrollablePositionedList.builder(
+                  itemCount: screens.length,
+                  itemBuilder: (context, index) => screens[index],
+                  itemScrollController: itemScrollController,
+                  scrollOffsetController: scrollOffsetController,
+                  itemPositionsListener: itemPositionsListener,
+                  scrollOffsetListener: scrollOffsetListener,
                 );
               },
             ),
