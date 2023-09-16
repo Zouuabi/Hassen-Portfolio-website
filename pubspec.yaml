@@ -1,5 +1,5 @@
-name: oubeid
-description: A new Flutter project.
+name: Hassen
+description: Hassen khlifi Software engineering student and Flutter developer
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -29,8 +29,10 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.3
   flutter_svg: ^2.0.7
   url_launcher: ^6.1.12
 

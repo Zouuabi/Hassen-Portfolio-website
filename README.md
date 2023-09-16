@@ -1,16 +1,30 @@
-# oubeid
+# Hassen Khlifi's Portfolio Website
 
-A new Flutter project.
+Welcome to Hassen Khlifi's portfolio website! This is where Hassen showcases his projects, skills, and experience. Feel free to explore and reach out if you have any questions or opportunities.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Home**: The landing page of the website.
+- **Projects**: Explore the projects that Hassen has worked on.
+- **About Me**: Learn more about Hassen's background, interests, and professional journey.
+- **Contact**: Get in touch with Hassen for any questions or opportunities.
 
-A few resources to get you started if this is your first Flutter project:
+## Live Preview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+You can view the live website at hassenkhlifi.com
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Contact
+
+Hassen Khlifi - contact@hassenKhlifi.com
+
+Project Link: [https://github.com/[zouuabi]/portfolio](https://github.com/[zouuabi]/portfolio)

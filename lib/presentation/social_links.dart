@@ -62,8 +62,8 @@ class SideInfoSection extends StatelessWidget {
                 orientation: 'rightToLeft',
                 child: InkWell(
                   onTap: followLink,
-                  child: Text(
-                    'contact@oubeid.com',
+                  child: const Text(
+                    'contact@hassenkhlifi.com',
                     //  style: kSecondaryTextStyle.copyWith(color: kWhiteColor)
                   ),
                 )),

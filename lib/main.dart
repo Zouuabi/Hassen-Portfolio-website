@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'presentation/home/home_page.dart';
+import 'presentation/main/main_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,7 +10,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,8 +17,10 @@ class MyApp extends StatelessWidget {
           colorScheme:
               const ColorScheme.dark().copyWith(primary: Colors.white)),
       debugShowCheckedModeBanner: false,
-      title: 'Oubeid Zouabi',
-      home: HomePage(),
+      // title
+      title: 'Khlifi Hassen',
+      // home
+      home: const MainScreen(),
     );
   }
 }
