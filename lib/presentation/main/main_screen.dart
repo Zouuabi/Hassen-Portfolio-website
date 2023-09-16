@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:oubeid/presentation/main/cubit/main_cubit.dart';
 
 import '../about_me/about_me_screen.dart';
 import '../contact/contact.dart';
 import '../home/home_screen.dart';
 import '../projects/projects_screen.dart';
 import '../social_links.dart';
+import 'cubit/main_cubit.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});

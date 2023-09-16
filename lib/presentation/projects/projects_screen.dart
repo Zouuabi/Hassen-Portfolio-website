@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:oubeid/presentation/projects/widgets/screen_decoration.dart';
 
 import 'widgets/project_card.dart';
+import 'widgets/screen_decoration.dart';
 
 class ProjectsScreen extends StatelessWidget {
   const ProjectsScreen({

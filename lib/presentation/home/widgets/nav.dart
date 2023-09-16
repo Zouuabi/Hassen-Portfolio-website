@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:oubeid/presentation/main/cubit/main_cubit.dart';
 
+import '../../main/cubit/main_cubit.dart';
 import 'custom_button.dart';
 
 class ViewNavigator extends StatelessWidget {
